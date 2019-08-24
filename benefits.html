@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Peru</title>
+<!--css-->
+<link rel="stylesheet" href="CSS/reset.css">
+<link rel="stylesheet" href="CSS/base.css">
+<link rel="stylesheet" href="CSS/travel.css">
+<link rel="stylesheet" href="CSS/slideshow.css">
+<link rel="stylesheet" href="CSS/table.css">
+<link rel="stylesheet" href="CSS/form.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--js-->
+<script src ="JS/benefits.js" defer></script>
+<script src ="JS/slideshow.js" defer></script>
+<script src ="JS/travel.js" defer></script>
+
+
+
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+<a href="index.html" id="logo" class="">TRAVEL TO LATIN AMERICA</a>
+<div class="topnav-right" id="topnav-right">
+  <a id="highlight" href="benefits.html">Benefits</a>
+  <div class="dropdown" id="myDropdown">
+    <button class="dropbtn">Locations
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="elsalvador.html">El Salvador</a>
+      <a href="guatemala.html">Guatemala</a>
+      <a href="peru.html">Peru</a>
+      <a href="argentina.html">Argentina</a>
+    </div>
+  </div>
+  <a href="featured.html">Featured</a>
+  <a id="" href="about.html">About</a>
+  </div>
+    
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div> <!-- end of class topnav-->
+
+
+<br>
+    
+    
+    <table class="container">
+        <caption>Benefits of Traveling to Latin America</caption>
+        <colgroup>
+            <col span="1" class="countryCol">
+            <col >
+        </colgroup>
+        <thead>
+            <tr>
+                <th><h1>Countries</h1></th>
+                <th><h1>Things to See</h1></th>
+                <th><h1>Where to Stay</h1></th>
+                <th><h1>Foods to Eat</h1></th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr >
+                <td class="tableFooter" colspan="4">There are many other things to see and foods to eat.
+                    I just listed a few that I know from traveling abroad.
+                </td>
+            </tr>
+        </tfoot>
+        
+        <tbody>
+            <tr>
+                <td class="firstCol">El Salvador</td>
+                <td>Volcanoes, Lakes, Ancient Ruins</td>
+                <td>From hostels to five-star hotels</td>
+                <td>Pupusas</td>
+            </tr>
+            <tr>
+                <td class="firstCol">Guatemala</td>
+                <td>Volcanoes, Lakes, Mountains, Mayan culture</td>
+                <td>From hostels to five-star hotels</td>
+                <td>Chicken Pepian</td>
+            </tr>
+            <tr>
+                <td class="firstCol">Peru</td>
+                <td>Machu Picchu, Rainbow Mountain</td>
+                <td>From hostels to five-star hotels</td>
+                <td>Ceviche or Lomo Salteado</td>
+            </tr>
+            <tr>
+                <td class="firstCol">Argentina</td>
+                <td>Iguazu Falls</td>
+                <td>From hostels to five-star hotels</td>
+                <td>Asado</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+
+
+<div class="intro">
+    <p>Would you like to learn more about one of these countries?</p>
+    <p>If so, you can request information by clicking one of the buttons below.</p>
+    <button class="salvadorButton" onclick="openESForm()">El Salvador</button>
+    <button class="guatemalaButton" onclick="openGForm()">Guatemala</button>
+    <button class="peruButton" onclick="openPForm()">Peru</button>
+    <button class="argentinaButton" onclick="openAForm()">Argentina</button>
+</div>
+
+    <div class="form-popup" id="salvadorForm">
+        <form action="" class="form-container">
+            <div class="formTitle">El Salvador Info</div>
+            <br>
+            <p>Required values are marked with an asterisk (*)</p>
+    
+            <div>
+            <label for="name"><b>Name*</b></label>
+            <input type="text" placeholder="First and Last Name" id="name" name="name" required>
+            </div>
+          
+            <label for="email"><b>Email*</b></label>
+            <input type="email" placeholder="Email" id="mail" name="email" required>
+          
+            <label for="phone"><b>Phone Number</b></label>
+            <input name="Phone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn"
+            pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
+    
+    
+            <input type="checkbox" name="deals" value="Deal">Send me safety tips for this country.<br>
+    
+          
+            <button type="submit" class="btn">Request Info</button>
+            <button type="button" class="btn cancel" onclick="closeESForm()">Cancel</button>
+        </form>
+    </div>
+
+    <div class="form-popup" id="guatemalaForm">
+        <form action="" class="form-container">
+            <div class="formTitle">Guatemala Info</div>
+            <br>
+            <p>Required values are marked with an asterisk (*)</p>
+    
+            <div>
+            <label for="name"><b>Name*</b></label>
+            <input type="text" placeholder="First and Last Name" id="name" name="name" required>
+            </div>
+          
+            <label for="email"><b>Email*</b></label>
+            <input type="email" placeholder="Email" id="mail" name="email" required>
+          
+            <label for="phone"><b>Phone Number</b></label>
+            <input name="Phone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn"
+            pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
+    
+    
+            <input type="checkbox" name="deals" value="Deal">Send me safety tips for this country.<br>
+    
+          
+            <button type="submit" class="btn" onclick="setForm1()">Request Info</button>
+            <button type="button" class="btn cancel" onclick="closeGForm()">Cancel</button>
+        </form>
+    </div>
+
+    <div class="form-popup" id="peruForm">
+            <form action="" class="form-container">
+                <div class="formTitle">Peru Info</div>
+                <br>
+                <p>Required values are marked with an asterisk (*)</p>
+        
+                <div>
+                <label for="name"><b>Name*</b></label>
+                <input type="text" placeholder="First and Last Name" id="name" name="name" required>
+                </div>
+              
+                <label for="email"><b>Email*</b></label>
+                <input type="email" placeholder="Email" id="mail" name="email" required>
+              
+                <label for="phone"><b>Phone Number</b></label>
+                <input name="Phone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn"
+                pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
+        
+        
+                <input type="checkbox" name="deals" value="Deal">Send me safety tips for this country.<br>
+        
+              
+                <button type="submit" class="btn" onclick="setForm2()">Request Info</button>
+                <button type="button" class="btn cancel" onclick="closePForm()">Cancel</button>
+            </form>
+        </div>
+
+        <div class="form-popup" id="argentinaForm">
+                <form action="" class="form-container">
+                    <div class="formTitle">Argentina Info</div>
+                    <br>
+                    <p>Required values are marked with an asterisk (*)</p>
+            
+                    <div>
+                    <label for="name"><b>Name*</b></label>
+                    <input type="text" placeholder="First and Last Name" id="name" name="name" required>
+                    </div>
+                  
+                    <label for="email"><b>Email*</b></label>
+                    <input type="email" placeholder="Email" id="mail" name="email" required>
+                  
+                    <label for="phone"><b>Phone Number</b></label>
+                    <input name="Phone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn"
+                    pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
+            
+            
+                    <input type="checkbox" name="deals" value="Deal">Send me safety tips for this country.<br>
+            
+                  
+                    <button type="submit" class="btn" onclick="setForm3()">Request Info</button>
+                    <button type="button" class="btn cancel" onclick="closeAForm()">Cancel</button>
+                </form>
+            </div>
+
+
+</body>
+
+
+<div class="footer" id="footer">
+    &copy 2019 James Schneider. All rights reserved.
+</div>

@@ -1,0 +1,619 @@
+html {
+    height: 100%;
+    box-sizing: border-box;
+  }
+  
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.42em;
+  color:#A7A1AE;
+}
+
+  body {
+    position: relative;
+    margin: 0;
+    padding-bottom: 6rem;
+    min-height: 100%;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    color: #3e4444;
+  
+  }
+  
+  figure {
+    min-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  
+  
+  .grid-container-2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px;
+    background-color: ;
+    padding: 40px;
+    text-align:center;
+  }
+  
+
+  
+  
+/*****************************************************
+Navigation Styles
+*****************************************************/
+.topnav {
+  width: 100%;
+  /*width: 75%;
+  margin-left: auto;
+  margin-right: auto;*/
+  padding-left: 30px;
+  padding-right: 30px;
+}
+  
+  
+.topnav-right {
+  float: right;
+}
+  
+.topnav {
+  overflow: hidden;
+  background: linear-gradient(to right, #011f4b, #005b96);
+}
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+.active {
+
+  }
+  
+.topnav .icon {
+  display: none;
+}
+  
+  
+  
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+  
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: linear-gradient(#011f4b, #005b96);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+  
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: white;
+  color: #000B18;
+
+}
+  
+  .dropdown-content a:hover {
+      background-color: white;
+      color: #000B18;
+  }
+  
+  .dropdown:hover .dropdown-content {
+      display: block;
+  }
+  
+  #logo {
+      background-color: ;
+      color: white;
+  }
+
+#logo:hover {
+  background-color: white;
+  color: #000B18;
+}
+  
+  #highlight {
+      color: #000B18;
+      background-color: white;
+  }
+  
+  
+  /*****************************************************
+  Body Styles
+  *****************************************************/
+  .block_text {
+      margin-left: auto;
+      margin-right: auto;
+      width: 75%;
+      max-width: 1150px;
+      font-size: 16px;
+  
+      /*text-align: left;*/
+  }
+  
+  .block_text_2 {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 900px;
+      font-size: 16px;
+  
+      /*text-align: left;*/
+  }
+  
+  .intro {
+      margin-left: auto;
+      margin-right: auto;
+      width: 700px;
+      font-family: arial;
+      font-size: 16px;
+      /*text-align: left;*/
+  }
+  
+  .item2 {
+      /*background-color:#ddd;*/
+  }
+  
+  .item1 {
+      display:inline-block;
+  }
+  
+  .date {
+    font-size: 12px;
+    color: #3e4444;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  
+  .delta {
+      text-align: left;
+  }
+  
+  .subject {
+      font-size: 1.2em;
+      text-align: center;
+  }
+  
+  #grid-text {
+      padding: 10px;
+      text-align:left;
+      display:inline-block;
+      font-size: 16px;
+  }
+  
+  
+  img {
+      max-width: 100%;
+      /*border-radius: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      display:auto;
+      max-width: 100%;
+      height: auto;*/
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+  }
+  
+  #about_me_pic {
+      border-radius: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      display:block;
+      width: 200px;
+      height: auto;
+  }
+  
+  #phenomena_pic {
+      border-radius: ;
+      margin-left: auto;
+      margin-right: auto;
+      display:block;
+      width: 500px;
+      height: auto;
+  }
+  
+  hr {
+      border: 0;
+      width: 100%;
+      color: gray;
+      background-color: gray;
+      height: 1px;
+  }
+  
+  .one {
+      text-align: center;
+  }
+  
+  .definition {
+      border: 1px solid gray;
+      padding: 10px;
+  }
+
+  .center-caption {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+
+  h2 {
+    font-size: 1.3em;
+  }
+  
+  
+  /******************************************************
+  Footer Styles
+  ******************************************************/
+  
+  .footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+      text-align: center;
+      font-size: 14px;
+  }
+  
+  
+  
+  
+  
+  
+  #featured_text {
+      font-size: 30px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  #travel_blog_pics {
+      display: block;
+      padding: 5px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  
+  #blog_pics {
+      display: block;
+      padding: 5px;
+      margin-left: auto;
+      margin-right: auto;
+      image-orientation: from-image;
+      /*transform: rotate(90deg);*/
+  }
+  
+  #huayna {
+      /*margin-left: auto;
+      margin-right: auto;
+      width: auto;
+      min-height: 100%;*/
+      transform: rotate(90deg);
+    margin-bottom: 15px;
+  }
+  
+  .figcaption {
+    margin-top: 10px;
+  }
+  
+  #scalelive {
+      margin-left: auto;
+      margin-right: auto;
+      width: auto;
+  }
+  
+  #scalelive_text {
+      text-align:center;
+  }
+  
+  #title {
+      font-weight:bold;
+  }
+  
+  
+  
+  /*******************************************************************
+  Mobile Styles
+  ********************************************************************/
+  
+  @media screen and (max-width: 500px) {
+      .grid-container-2 {
+          grid-template-columns:;
+          grid-template-rows:;
+          grid-gap: 20px;
+          padding: 20px;
+          text-align: center;
+      }
+  
+      #github_icon, #linkedin_icon {
+          width: 75px;
+      }
+  
+  }
+  
+  /*******************************************************************
+  Tablet Styles
+  ********************************************************************/
+  
+  @media screen and (max-width: 775px) {
+      
+      .intro, .slideshow-container{
+        margin: 20px;
+      }
+
+      figcaption {
+        text-align: justify;
+      }
+
+      .topnav a:not(:first-child), .dropdown .dropbtn {
+          display: none;
+      }
+  
+      .topnav-right {
+          display:none;
+      }
+  
+  
+      .topnav a.icon {
+          float: right;
+          display: block;
+      }
+  
+    .intro {
+      margin-left: auto;
+      margin-right: auto;
+      width: auto;
+      padding: 1em;
+      }
+  
+      .block_text, .topnav {
+      margin-left: auto;
+      margin-right: auto;
+      min-width: 90%;
+      /*text-align: left;*/
+      padding-left: 0px;
+      padding-right: 0px;
+      }
+  
+      .block_text_2 {
+          max-width: 90%;
+      }
+  
+  }
+  
+  @media screen and (max-width: 775px) {
+    .topnav {position: relative;}
+    .topnav .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  
+    .topnav a, .dropdown {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  
+    figure {
+      margin-left: 10px;
+      margin-right: 10px;
+      min-width: 250px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+  }
+  
+  
+  
+  
+  
+  @media screen and (max-width: 775px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  
+    .topnav.responsive a, .dropdown.responsive {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topnav.responsive .dropdown {float: none;}
+    .topnav.responsive .dropdown-content {position: relative;}
+    .topnav.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+    text-align:center;
+  }
+  .grid-container > div {
+    text-align: left;
+    padding: 20px 0;
+    font-size: 20px;
+  }
+  
+  .grid-container-3 {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+      grid-gap: 40px;
+      background-color: ;
+      padding: 20px;
+      text-align:center;
+  }
+  
+  
+  .b, .two {
+        font-size: 20px;
+      text-align: center;
+  }
+  
+  .c {
+      overflow: hidden;
+  }
+  
+.d {
+  font-size: 16px;
+  text-align: left;
+  margin-top: 5px;
+  margin-bottom: 40px;
+  line-height: 20px;
+  }
+  
+  
+  
+  
+  #github_icon, #linkedin_icon {
+      width: 100px;
+      min-width: 50px;
+  }
+  
+  .github_icon {
+      grid-column-start: 2;
+      grid-column-end: 3;
+  }
+  
+  .linkedin_icon {
+      grid-column-start: 3;
+      grid-column-end: 4;
+  }
+  
+  .item3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  
+  @media screen and (max-width: 1175px) {
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
+      .item3 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+      }
+  
+  
+  
+  }
+    #phenomena_pic {
+      border-radius: ;
+    margin-left: auto;
+      margin-right: auto;
+      display:auto;
+      width: auto;
+      height: auto;
+      }
+  
+  
+  /**********************************************
+  Blog Styles
+  ***********************************************/
+  
+  .blogMeta {
+      color: gray;
+      font-size: 14px;
+  }
+  
+  
+  .article_title {
+    background: #3e4444;
+    padding: 1px 10px;
+    border-radius: 2px;
+    color: white;
+  }
+  
+
+  
+  div.intro a:visited {
+      color: #0000EE;
+  }
+
+#welcome-banner {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-family: 'Open Sans', sans-serif;
+  font-size:2.5em; 
+  font-weight: 300;
+  line-height:1em;
+  text-align: center;
+  color: #03396c;
+  }
+
+  /**********************************************
+  Video Styles
+  ***********************************************/
+  video.center-video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+  }
+
+  /**********************************************
+  Button Styles
+  ***********************************************/
+  button {
+    width: 125px;
+    padding: 10px;
+    margin: 15px;
+    background: #b3cde0;
+    color: #03396c;
+    border-radius: 2px;
+    font-size: 16px;
+  }
+
+  button:hover {
+    cursor: pointer;
+  }
